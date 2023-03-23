@@ -5,7 +5,7 @@ import sys
 import discord
 from discord.ext import commands
 
-tokenFile = open("./", "r")
+tokenFile = open("./token", "r")
 TOKEN = tokenFile.readline()
 tokenFile.close()
 

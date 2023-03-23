@@ -1,12 +1,15 @@
 import asyncio
 import json
-import discord
-from discord.ext import commands
 import random
 
+import discord
 import requests
+from discord.ext import commands
 
-TENORKEY = 'AIzaSyCDtbqCnaAOia_gApfrSd27F1H2k3l93Qc'
+tokenFile = open("./token2", "r")
+TENORKEY = tokenFile.readline()
+tokenFile.close()
+
 CKEY = 'discordbot'
 EMOJIS = ["💛", "🟡", "🟨", "🌻", "☀"]
 
